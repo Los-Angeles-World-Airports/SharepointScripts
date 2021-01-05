@@ -27,7 +27,7 @@ $sqlConnection = New-Object System.Data.SqlClient.SqlConnection
 $sqlConnection.ConnectionString = "Server=$DBServer;Database=$DBName;User ID=$DBUser;Password=$DBPass;"
 $executeSQL = 0
 # ------------------- DB CONN SETUP ------------------------------------------
-$LogFile = "D:\Tasks\PowershellAutoScripts\sitecolsize.html"
+$LogFile = "{PATH/TO/FILE}.html"
 #SMTP server name
 $smtpServer = "{EMAIL SERVER}"
 $emailFrom = "{EMAIL FROM}"
@@ -76,9 +76,11 @@ foreach($line in $DBCol) {
 }
 
 # -------------- Close the connection ----------------------.
-if ($sqlConnection.State -eq [Data.ConnectionState]::Open) {
-    $sqlConnection.Close()
-} 
+if($executeSQL -eq 1) {
+	if ($sqlConnection.State -eq [Data.ConnectionState]::Open) {
+	    $sqlConnection.Close()
+	} 
+}
 # -------------- Close the connection ----------------------
 
 Start-Sleep -s 2
