@@ -1,9 +1,6 @@
 # ================================================================================================================
-# |Developer: Fabian Raygosa
-# |Date: September 20, 2012
 # |Purpose: This script will scan through a sharepoint farm sites and then get data on who has alerts created on the farm.
 # html file is built plus an email can be sent
-# Scan for UNCOMMENT's
 # ================================================================================================================
 
 #Set Thread to clean memory
