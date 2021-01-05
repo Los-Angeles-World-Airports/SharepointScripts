@@ -1,6 +1,4 @@
 #=============================================
-# Author: Fabian Raygosa
-# Date: 8/24/2012
 # Purpose: Collect size of site collections
 #   Email attachment information
 #   Put data into database for recording purposes
