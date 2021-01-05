@@ -1,6 +1,4 @@
 #=============================================
-# Author: Fabian Raygosa
-# Date: 8/24/2012
 # Purpose: List All databases in a farm with their size.
 #       Save to a file and email to someone
 #       Save to a database (helpful for reporting)
@@ -85,8 +83,6 @@ if($executeSQL -eq 1) {
     } 
 }
 # -------------- Close the connection ----------------------
-
-$LogFile= "D:\Tasks\PowershellAutoScripts\dbsize.txt"
 
 Write-Output $message | Out-File $logFile
 
