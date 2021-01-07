@@ -2,6 +2,7 @@
 # Purpose: Collect size of site collections
 #   Email attachment information
 #   Put data into database for recording purposes
+#   NOTE: Insert SQL needs to be altered for your work
 #=============================================
 
 #Set Thread to clean memory
