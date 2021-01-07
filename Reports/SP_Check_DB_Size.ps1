@@ -2,6 +2,7 @@
 # Purpose: List All databases in a farm with their size.
 #       Save to a file and email to someone
 #       Save to a database (helpful for reporting)
+#   NOTE: Insert SQL needs to be altered for your work
 #=============================================
 
 #Set Thread to clean memory
